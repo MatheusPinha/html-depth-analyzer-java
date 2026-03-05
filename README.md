@@ -1,2 +1,21 @@
-# html-depth-analyzer-java
-Java tool developed as a technical challenge for a Software Engineering role. It parses HTML from a URL to identify the deepest nested text segment and validates the tag structure using a Stack-based algorithm. Built with pure Java 17, focusing on logic, performance, and zero external dependencies.
+# HTML Analyzer - Axur Technical Challenge
+
+This program analyzes an HTML structure from a given URL and identifies the text segment located at the deepest nesting level.
+
+## Requirements
+* JDK 17
+* No external libraries or frameworks
+
+## How to Compile
+From the directory containing the source code, run:
+```bash
+javac HtmlAnalyzer.java
+
+## How to Run
+Execute the program by providing a valid URL as an argument:
+java HtmlAnalyzer <URL>
+
+## Features
+Deepest Text Identification - Returns the first text segment at the maximum depth level.
+HTML Validation (Bonus) - Identifies malformed HTML structures and returns "malformed HTML".
+Error Handling - "URL connection error" if the content cannot be retrieved.
